@@ -3,21 +3,21 @@ layout: page
 title: The Basics
 ---
 
-# The Basics
+# Les bases
 
-## Comparison operators
+## Opérateurs de comparaison
 
-Comparison operators are an often overlooked aspect of PHP, which can lead to many unexpected outcomes. One such
-problem stems from strict comparisons (the comparison of booleans as integers).
+Les opérateurs de comparaison sont un aspect souvent négligé de PHP, ce qui peut conduire à de nombreux résultats
+inattendus. Cela est souvent dû aux comparaisons strictes (la comparaison des booléens comme des entiers).
 
 {% highlight php %}
 <?php
-$a = 5;   // 5 as an integer
+$a = 5;   // 5 comme un entier
 
-var_dump($a == 5);       // compare value; return true
-var_dump($a == '5');     // compare value (ignore type); return true
-var_dump($a === 5);      // compare type/value (integer vs. integer); return true
-var_dump($a === '5');    // compare type/value (integer vs. string); return false
+var_dump($a == 5);       // comparaison de la valeur; renvoie true
+var_dump($a == '5');     // comparaison de la valeur (le type est ignoré); renvoie true
+var_dump($a === 5);      // comparaison du couple type/valeur (integer vs. integer); renvoie true
+var_dump($a === '5');    // comparaison du couple type/valeur (integer vs. string); renvoie false
 
 /**
  * Strict comparisons
